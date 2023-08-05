@@ -22,7 +22,7 @@ let package = Package(
             name: "TestFrameworkP",
             dependencies: []),
         .binaryTarget(name: "MyTestFramework",
-                      url: "https://github.com/vishwa8816/MyTestFrameworkA/releases/download/Second/MyTestFramework.xcframework.zip",
-                      checksum: "35c5b4f025ab70b0db0317a03c6edddc15e45a7b0722687cc935fc9f4b867140")
+                      url: "https://github.com/vishwa8816/MyTestFrameworkA/releases/download/Third/MyTestFramework.xcframework.zip",
+                      checksum: "335ccbceaff27fef4d95fc65239fd3722f1646dc34519c43dc3b5a852b446a33")
     ]
 )
