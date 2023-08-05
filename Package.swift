@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "TestFrameworkP",
-            targets: ["TestFrameworkP"]),
+            targets: ["TestFrameworkP", "MyTestFramework"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,8 +21,8 @@ let package = Package(
         .target(
             name: "TestFrameworkP",
             dependencies: []),
-        .testTarget(
-            name: "TestFrameworkPTests",
-            dependencies: ["TestFrameworkP"]),
+        .binaryTarget(name: "MyTestFramework",
+                      url: "https://github.com/vishwa8816/MyTestFrameworkA/releases/download/Second/MyTestFramework.xcframework.zip",
+                      checksum: "35c5b4f025ab70b0db0317a03c6edddc15e45a7b0722687cc935fc9f4b867140")
     ]
 )
